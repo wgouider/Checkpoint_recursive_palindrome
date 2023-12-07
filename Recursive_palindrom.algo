@@ -1,0 +1,16 @@
+FUNCTION palindrome(tab , i,j) : BOOLEAN
+VAR
+    tab: ARRAY_OF type[CHAR];
+    i,j:INTEGER 
+    i:=0;
+    j:=tab.length - 1
+BEGIN
+    IF (i>=j) THEN
+        RETURN true;
+    ELSE
+       
+       RETURN (tab[i] = tab[j] AND palindrome (tab,i+1,j-1))
+
+    END_IF
+    
+END
